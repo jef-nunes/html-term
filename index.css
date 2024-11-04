@@ -1,0 +1,63 @@
+#term
+{
+    font-size: 12px;
+    background-color: black;
+    color: azure;
+    width: 300px;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: azure;
+    border-style: solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#term-out
+{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow-y: auto;
+    
+}
+
+#term-in
+{
+    outline: none;
+    color: azure;
+    background-color: black;
+    border-style: none;
+    margin-left: 5px;
+    width: 200px;
+    height: 15px;
+    padding: 0px;
+    resize: none;
+}
+
+#term-in-fmt
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#term-bts
+{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/* Basic colors */
+.term-red{color: rgb(255, 96, 68);}
+.term-blue{color: rgb(81, 206, 255);}
+.term-green{color: rgb(175, 236, 125);}
+.term-yellow{color: rgb(255, 234, 118);}
+.term-aqua{color: rgb(67, 192, 192);}
+.term-purple{color: rgb(142, 115, 238);}
+.term-white{color:azure;}
+.term-black{color: black;}
