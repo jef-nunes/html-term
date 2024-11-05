@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self';
+    img-src 'self' data:;
+    object-src 'none';
+    frame-ancestors 'none';
+    base-uri 'self';
+    ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
 <body>
+    <main>
+    <div id="title-container">
+    <img id="logo" src="images/terminal.svg" alt="" width="20px" height="20px">
+    <h5 id="title">HTML Term</h5>
+    </div>
+
     <div id="term">
-        <span>
-            <i class="term-red">HTML</i>
-            <i class="term-white">Terminal style interface with interactive output.</i>
-        </span>
+        <div>
+            <span class="term-blue">HTML</span>
+            <span class="term-white">Terminal style interface containing example</span>
+            <span class="term-blue">JavaScript</span>
+            <span class="term-white">logic for handling text input.</span>
+        </div>
         <div id="term-out">
         <span><br></span>
         </div>
         <div id="term-in-fmt">
-        <div><i class="term-blue">@html-term:</i></div>
-        <textarea name="" id="term-in">
-            ...
-        </textarea>
+        <div>
+            <span class="term-green">testing@html-term:</span>
+            <span class="term-white">$</span>
+        </div>
+        <input type="text" name="" id="term-in">
         </div>
     </div>
     <div id="term-bts">
     <button id="bt-test">Send</button>
     <button id="bt-test">Clear</button>
     </div>
+    </main>
     <script src="js/index.js"></script>
 </body>
 </html>
