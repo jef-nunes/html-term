@@ -1,2 +1,2 @@
 #### Preview:
-![Preview](preview.png)
+![Preview](preview_img.png)
