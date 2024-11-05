@@ -22,7 +22,7 @@ function gen_ouput(mode, test_input_text="", is_error=false, is_alert=false)
     span1.textContent = "testing@html-term:"
     span1.classList.add("term-green");
     if(is_error){
-        span2.classList.add("term-dark-red");
+        span2.classList.add("term-red");
     }
     else if(is_alert){
         span2.classList.add("term-yellow")
