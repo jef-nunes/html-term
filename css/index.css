@@ -1,9 +1,58 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+
+main
+{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+::selection
+{
+    background-color: rgb(5, 83, 117);
+}
+
+#title-container
+{
+    background-color: rgba(8, 15, 23, 0.399);;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    gap: 10px;
+}
+
+#title
+{
+    margin: 0;
+    font-size: 18px;
+    font-family: "Chakra Petch", monospace;
+    color: rgb(230, 234, 236);
+    text-shadow: 0px 0px 12px #b4bebf;
+}
+
+#logo
+{
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: rgb(40, 151, 202);
+    border-style: solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
 #term
 {
+    margin-top: 30px;
     font-size: 12px;
-    background-color: black;
+    background-color: rgb(21, 22, 23);
     color: azure;
-    width: 300px;
+    width: 380px;
     height: fit-content;
     padding: 15px;
     border-radius: 7px;
@@ -21,16 +70,17 @@
 {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 125px;
     overflow-y: auto;
     
 }
 
 #term-in
 {
+    caret-color: rgb(224, 228, 224);
     outline: none;
     color: azure;
-    background-color: black;
+    background-color: rgb(21, 22, 23);
     border-style: none;
     margin-left: 5px;
     width: 200px;
@@ -49,15 +99,33 @@
 #term-bts
 {
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 150px;
+    background-color: rgb(33, 35, 38);
+    padding: 1px;
+    width: fit-content;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+}
+
+#term-bts button
+{
+    color: rgb(208, 218, 224);
+    background-color: rgb(51, 53, 55);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    user-select: none;
 }
 
 /* Basic colors */
-.term-red{color: rgb(255, 96, 68);}
-.term-blue{color: rgb(81, 206, 255);}
-.term-green{color: rgb(175, 236, 125);}
-.term-yellow{color: rgb(255, 234, 118);}
+.term-red{color: rgb(235, 98, 60);}
+.term-dark-red{color: rgb(205, 51, 51);}
+.term-blue{color: rgb(27, 144, 234);}
+.term-green{color: rgb(87, 243, 118);}
+.term-yellow{color: rgb(255, 235, 103);}
+.term-dark-yellow{color: rgb(228, 211, 102);}
 .term-aqua{color: rgb(67, 192, 192);}
-.term-purple{color: rgb(142, 115, 238);}
-.term-white{color:azure;}
+.term-purple{color: rgb(156, 34, 227);}
+.term-white{color:rgb(236, 242, 233);}
 .term-black{color: black;}
